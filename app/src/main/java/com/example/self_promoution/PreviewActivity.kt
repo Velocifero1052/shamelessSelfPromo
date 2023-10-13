@@ -13,18 +13,20 @@ class PreviewActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_preview)
 
-        val contactName = intent.getStringExtra("contactName")
-        val contactNumber = intent.getStringExtra("contactNumber")
-        val myDisplayName = intent.getStringExtra("myDisplayName")
-        val junior = intent.getBooleanExtra("junior", false)
-        val jobTitle = intent.getStringExtra("jobTitle")
-        val immediateStart = intent.getBooleanExtra("immediateStart", false)
-        val startDate = intent.getStringExtra("startDate")
-
-        val testString = "Contact Name: $contactName,\n Contact Number: $contactNumber,\n" +
-                "My Display Name: $myDisplayName\n, Include Junior: $junior,\n" +
-                "Job Title: $jobTitle\n, Immediate Start: $immediateStart,\n" +
-                "Start Date: $startDate\n"
+        val message: Message = intent.getSerializableExtra("message") as Message
+        val testString = """
+               Hi ${message.contactName},
+               
+               My name is ${message.myDisplayName} and I am ${message.getFullJobDescription()}.
+               
+               I have a portfolio of apps to demonstrate my technical skills that I can show on request.
+               
+               I am able to start a new position ${message.getAvailability()}.
+               
+               Please get in touch if you have any suitable roles for me.
+               
+               Thanks and best regards.
+            """.trimIndent()
 
         text_view_message.text = testString
     }
