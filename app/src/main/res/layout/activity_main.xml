@@ -13,7 +13,7 @@
         <com.google.android.material.textfield.TextInputLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Contact Name"
+            android:hint="@string/hint_contact_name"
             >
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/edit_text_contact_name"
@@ -26,7 +26,7 @@
         <com.google.android.material.textfield.TextInputLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Phone number"
+            android:hint="@string/hint_phone_number"
             android:layout_marginTop="8dp"
             >
             <com.google.android.material.textfield.TextInputEditText
@@ -41,7 +41,7 @@
         <com.google.android.material.textfield.TextInputLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Display name"
+            android:hint="@string/hint_display_name"
             android:layout_marginTop="8dp"
             >
 
@@ -59,7 +59,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
-            android:text="Include 'Junior'" />
+            android:text="@string/text_include_junior" />
 
         <Spinner
             android:id="@+id/spinner_job_title"
@@ -71,13 +71,13 @@
             android:id="@+id/check_box_immediate_start"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Immediate start" />
+            android:text="@string/text_immediate_start" />
 
 
         <com.google.android.material.textfield.TextInputLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Available from"
+            android:hint="@string/hint_available_from"
             android:layout_marginTop="8dp"
             >
             <com.google.android.material.textfield.TextInputEditText
@@ -94,7 +94,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="24dp"
             style="@style/Widget.AppCompat.Button.Colored"
-            android:text="Preview Message" />
+            android:text="@string/text_preview_message" />
 
     </LinearLayout>
 

@@ -1,3 +1,11 @@
 <resources>
     <string name="app_name">The Self-Promo App</string>
+    <string name="hint_contact_name">Contact Name</string>
+    <string name="hint_phone_number">Phone Number</string>
+    <string name="hint_display_name">Display Name</string>
+    <string name="text_include_junior">Include \'Junior\'</string>
+    <string name="text_immediate_start">Immediate start</string>
+    <string name="hint_available_from">Available from</string>
+    <string name="text_preview_message">Preview Message</string>
+    <string name="button_text_send">SendMessage</string>
 </resources>
