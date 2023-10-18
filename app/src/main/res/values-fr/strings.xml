@@ -2,5 +2,11 @@
 <resources>
     <string name="app_name">Auto-promotion sans vergogne</string>
     <string name="hint_contact_name">Nom du contact</string>
-    
+    <string name="hint_phone_number">Numéro de Téléphone</string>
+    <string name="hint_display_name">Nom D\'Affichage</string>
+    <string name="text_include_junior">Inclure \'Junior\'</string>
+    <string name="text_immediate_start">Démarrage immédiat</string>
+    <string name="hint_available_from">Disponible à partir de</string>
+    <string name="text_preview_message">Aperçu du Message</string>
+    <string name="button_text_send">Envoyer Un Message</string>
 </resources>
